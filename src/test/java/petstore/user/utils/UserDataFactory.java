@@ -1,9 +1,9 @@
-package petstore.utils;
+package petstore.user.utils;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import petstore.models.User;
+import petstore.user.models.User;
 
 public class UserDataFactory {
 

@@ -1,4 +1,4 @@
-package petstore.models;
+package petstore.store.models;
 
 import java.util.Date;
 

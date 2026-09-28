@@ -1,4 +1,4 @@
-package petstore.models;
+package petstore.user.models;
 
 public class User {
 	private long id;

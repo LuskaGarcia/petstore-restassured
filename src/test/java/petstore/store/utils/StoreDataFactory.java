@@ -1,7 +1,7 @@
-package petstore.utils;
+package petstore.store.utils;
 
 
-import petstore.models.Store;
+import petstore.store.models.Store;
 import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

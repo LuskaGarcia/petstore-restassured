@@ -1,4 +1,4 @@
-package petstore.base;
+package petstore.shared;
 
 import org.junit.jupiter.api.BeforeAll;
 

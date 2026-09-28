@@ -1,4 +1,4 @@
-package petstore.models;
+package petstore.pet.models;
 
 public class Tag {
 	private long id;

@@ -1,9 +1,9 @@
-package petstore.tests;
+package petstore.store.tests;
 
-import petstore.base.BaseTest;
-import petstore.models.Store;
-import petstore.services.StoreService;
-import petstore.utils.StoreDataFactory;
+import petstore.shared.BaseTest;
+import petstore.store.models.Store;
+import petstore.store.services.StoreService;
+import petstore.store.utils.StoreDataFactory;
 import io.restassured.response.Response;
 
 import org.junit.jupiter.api.*;

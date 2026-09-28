@@ -1,8 +1,8 @@
-package petstore.utils;
+package petstore.pet.utils;
 
-import petstore.models.Category;
-import petstore.models.Pet;
-import petstore.models.Tag;
+import petstore.pet.models.Category;
+import petstore.pet.models.Pet;
+import petstore.pet.models.Tag;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 

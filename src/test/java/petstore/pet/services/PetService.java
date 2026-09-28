@@ -1,7 +1,7 @@
-package petstore.services;
+package petstore.pet.services;
 
-import petstore.models.Pet;
-import petstore.utils.RequestSpecFactory;
+import petstore.pet.models.Pet;
+import petstore.shared.RequestSpecFactory;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;

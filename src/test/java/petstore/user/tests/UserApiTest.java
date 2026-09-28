@@ -1,4 +1,4 @@
-package petstore.tests;
+package petstore.user.tests;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
@@ -10,10 +10,10 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import petstore.base.BaseTest;
-import petstore.models.User;
-import petstore.services.UserService;
-import petstore.utils.UserDataFactory;
+import petstore.shared.BaseTest;
+import petstore.user.models.User;
+import petstore.user.services.UserService;
+import petstore.user.utils.UserDataFactory;
 import io.restassured.response.Response;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

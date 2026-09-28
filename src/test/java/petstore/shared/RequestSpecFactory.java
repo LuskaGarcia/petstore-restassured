@@ -1,4 +1,4 @@
-package petstore.utils;
+package petstore.shared;
 
 import petstore.config.ConfigReader;
 import io.restassured.builder.RequestSpecBuilder;
