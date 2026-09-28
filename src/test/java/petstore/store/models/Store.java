@@ -2,6 +2,15 @@ package petstore.store.models;
 
 import java.util.Date;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class Store {
 	private long id;
 	private long petId;
@@ -9,34 +18,4 @@ public class Store {
 	private Date shipDate;
 	private String status;
 	private boolean complete;
-
-	public Store(){}
-
-	public Store(long id, long petId, int quantity, Date shipDate, String status, boolean complete){
-		this.id = id;
-		this.petId = petId;
-		this.quantity = quantity;
-		this.shipDate = shipDate;
-		this.status = status;
-		this.complete = complete;
-	}
-
-	public long getId(){return id;}
-	public void setId(long id){this.id = id;}
-
-	public long getPetId(){return petId;}
-	public void setPetId(long petId){this.petId = petId;}
-
-	public int getQuantity(){return quantity;}
-	public void setQuantity(int quantity){this.quantity = quantity;}
-
-	public Date getShipDate(){return shipDate;}
-	public void setShipDate(Date shipDate){this.shipDate = shipDate;}
-
-	public String getStatus(){return status;}
-	public void setStatus(String status){this.status = status;}
-
-	public boolean getComplete(){return complete;}
-	public void setComplete(boolean complete){this.complete = complete;}
-
 }

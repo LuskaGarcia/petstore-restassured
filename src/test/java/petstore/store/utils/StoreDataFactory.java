@@ -13,14 +13,14 @@ public class StoreDataFactory {
 		Date dataAtual = new Date();
 		Random random = new Random();
 		int quantity = random.nextInt(100);
-		return new Store(
-				id,
-				petId,
-				quantity,
-				dataAtual,
-				"Em Processo",
-				true
-		);
+		return Store.builder()
+				.id(id)
+				.petId(petId)
+				.quantity(quantity)
+				.shipDate(dataAtual)
+				.status("Em Processo")
+				.complete(true)
+				.build();
 
 	}
 

@@ -7,20 +7,21 @@ import petstore.user.models.User;
 
 public class UserDataFactory {
 
-	public static User criaUser(){
+	public static User criaUser() {
 		long id = geraIdAleatorio();
 		Random random = new Random();
 		int userStatus = random.nextInt(3);
 
-		return new User(
-				id,
-				"userTestename",
-				"userFirst",
-				"userLast",
-				"teste@teste.com",
-				"teste123",
-				"99999999999",
-				userStatus);
+		return User.builder()
+				.id(id)
+				.username("userTestename")
+				.firstName("userFirst")
+				.lastName("userLast")
+				.email("teste@teste.com")
+				.password("teste123")
+				.phone("99999999999")
+				.userStatus(userStatus)
+				.build();
 	}
 
 	public static long geraIdAleatorio() {
